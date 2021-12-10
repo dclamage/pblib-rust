@@ -1,4 +1,4 @@
-use std::collections::HashSet;
+use std::collections::BTreeSet;
 
 #[derive(Debug, Clone)]
 pub struct Statistic {
@@ -122,7 +122,7 @@ pub struct PBConfigClass {
 	pub debug_value: String,
 	pub just_approximate: bool,
 	pub approximate_max_value: i64,
-	pub cmd_line_options: HashSet<String>,
+	pub cmd_line_options: BTreeSet<String>,
 
 	pub config_name: String,
 }
@@ -151,7 +151,7 @@ impl PBConfigClass {
 			debug_value: String::new(),
 			just_approximate: false,
 			approximate_max_value: 1000,
-			cmd_line_options: HashSet::new(),
+			cmd_line_options: BTreeSet::new(),
 
 			config_name: String::new(),
 		}

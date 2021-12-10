@@ -1,3 +1,4 @@
+pub mod aux_var_manager;
 pub mod pb_config;
 pub mod pb_constraint;
 pub mod simple_pb_constraint;
